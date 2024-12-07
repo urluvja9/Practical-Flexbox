@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX9</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+    
+            body {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                margin: 4px;
+                height: calc( 100vh - 8px) ;
+            }
+    
+            nav {
+                display: flex;
+                border: 1px solid black;
+                justify-content: space-between;
+                padding: 4px;
+            }
+    
+            .nav1 {
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+            }
+    
+            .childnav {
+                background-color: red;
+                height: 35px;
+                width: 35px;
+            }
+    
+            .childtitle {
+                display: flex;
+                align-items: center;
+            }
+    
+            .nav2 {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+            }
+    
+            .nad {
+                background-color: red;
+                height: 27px;
+                width: 40px;
+            }
+    
+            main {
+                display: flex;
+                gap: 4px;
+                
+            }
+            main{
+                flex-grow: 1;
+            }
+            .main1 {
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                padding: 4px;
+               flex-grow: 1;
+            }
+    
+            .childmain1 {
+                border: 1px solid black;
+                height: 33px;
+                width: 180px;
+            }
+    
+            .main2 {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+    
+            .m1 {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
+                flex-grow: 1;
+                width: 1152px;
+                align-items: center;
+                padding: 4px;
+            }
+            
+            .childmain2 {
+                display: flex;
+                border: 1px solid black;
+                width: 1000px;
+                height: 180px;
+                margin-bottom: 10px;
+            }
+    
+            .m2 {
+                display: flex;
+                border: 1px solid black;
+                padding: 4px;
+                height: 35px;
+                justify-content: space-between;
+            }
+    
+            .mini2 {
+                display: flex;
+                gap: 4px;
+            }
+    
+            .mainbox {
+                display: flex;
+                background-color: red;
+                height: 35px;
+                width: 35px;
+            }
+    
+            .footcont {
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+                margin: 4px;
+                align-items: center;
+            }
+    
+            .footbox {
+                background-color: red;
+                display: flex;
+                height: 20px;
+                width: 25px;
+            }
+    
+        </style>
+    
+    </head>
+    <body>
+        <nav>
+            <div class="nav1">
+                <div class="childnav"></div>
+                <div class="childtitle">FLEXBOX</div>
+            </div>
+            <div class="nav2">
+                <div class="nad"></div>
+                <div class="nad"></div>
+                <div class="nad"></div>
+                <div class="nad"></div>
+            </div>
+        </nav>
+    
+        <main>
+            <div class="main1">
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+                <div class="childmain1"></div>
+            </div>
+            <div class="main2">
+                <div class="m1">
+                    <div class="childmain2"></div>
+                    <div class="childmain2"></div>
+                </div>
+              <div class="m2">
+                <div class="mini2">
+                    <div class="mainbox"></div>
+                    <div class="text">
+                        <div class="title2">FLEXBOX</div>
+                        <div class="title2">©Copyright All rights reserved.</div>
+                    </div>
+                </div>       
+                <div class="footcont">
+                    <div class="footbox"></div>
+                    <div class="footbox"></div>
+                    <div class="footbox"></div>
+                    <div class="footbox"></div>
+                    <div class="footbox"></div>
+                </div>
+              </div>
+            </div>
+        </main>
+        
+    </body>
+    </html>
